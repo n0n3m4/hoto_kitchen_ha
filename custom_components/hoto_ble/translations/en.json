@@ -1,0 +1,47 @@
+{
+  "config": {
+    "flow_title": "{name}",
+    "step": {
+      "user": {
+        "title": "Add HOTO Smart Weight scale",
+        "description": "Enter the scale's Bluetooth MAC address and its per-device token.",
+        "data": {
+          "address": "Bluetooth address",
+          "token": "Device token (hex)"
+        }
+      },
+      "bluetooth_confirm": {
+        "title": "Set up {name}",
+        "description": "Enter the per-device token for {name}.",
+        "data": {
+          "token": "Device token (hex)"
+        }
+      }
+    },
+    "error": {
+      "invalid_token": "The token must be 24 hexadecimal characters (12 bytes)."
+    },
+    "abort": {
+      "already_configured": "This scale is already configured."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "HOTO Smart Weight options",
+        "description": "After the weight stays constant for the idle timeout the integration disconnects so the scale can sleep. The reconnect cooldown is how long advertisements are then ignored before reconnecting — set it longer than the time the scale keeps advertising after a disconnect, or it will reconnect before the scale sleeps. Set the idle timeout to 0 to stay connected permanently; set the cooldown to 0 to reconnect immediately.",
+        "data": {
+          "idle_timeout": "Idle disconnect timeout (seconds)",
+          "reconnect_cooldown": "Reconnect cooldown (seconds)"
+        }
+      }
+    }
+  },
+  "entity": {
+    "sensor": {
+      "weight": {
+        "name": "Weight"
+      }
+    }
+  }
+}

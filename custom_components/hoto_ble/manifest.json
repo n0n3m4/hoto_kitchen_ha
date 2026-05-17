@@ -1,0 +1,19 @@
+{
+  "domain": "hoto_ble",
+  "name": "HOTO Smart Weight",
+  "bluetooth": [
+    {
+      "local_name": "HOTO*",
+      "connectable": true
+    }
+  ],
+  "codeowners": [],
+  "config_flow": true,
+  "dependencies": ["bluetooth_adapters"],
+  "documentation": "https://github.com/n0n3m4/xiaomi-kitchen-scales",
+  "integration_type": "device",
+  "iot_class": "local_push",
+  "issue_tracker": "https://github.com/n0n3m4/xiaomi-kitchen-scales/issues",
+  "requirements": ["bleak-retry-connector>=3.5.0"],
+  "version": "0.1.0"
+}
