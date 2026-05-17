@@ -10,10 +10,10 @@
   "codeowners": [],
   "config_flow": true,
   "dependencies": ["bluetooth_adapters"],
-  "documentation": "https://github.com/n0n3m4/xiaomi-kitchen-scales",
+  "documentation": "https://github.com/n0n3m4/hoto_kitchen_ha",
   "integration_type": "device",
   "iot_class": "local_push",
-  "issue_tracker": "https://github.com/n0n3m4/xiaomi-kitchen-scales/issues",
+  "issue_tracker": "https://github.com/n0n3m4/hoto_kitchen_ha/issues",
   "requirements": ["bleak-retry-connector>=3.5.0"],
   "version": "0.1.0"
 }
