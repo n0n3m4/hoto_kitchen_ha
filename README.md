@@ -51,4 +51,3 @@ The idle-disconnect timeout can be changed any time via the integration's
 - `custom_components/hoto_ble/` — the integration. `hoto.py` is a self-contained,
   Home-Assistant-agnostic BLE driver and can be run standalone for hardware testing:
   `python hoto.py <MAC> <TOKEN_HEX>` (from inside the component directory).
-- `hoto_client_poc.py` — the original proof-of-concept the driver was derived from.
